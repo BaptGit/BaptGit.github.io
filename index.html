@@ -2,7 +2,33 @@
 <html>
 
 <body>
-    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/oETuywnD5Y8?start=26&amp;end=234?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <video autoplay loop width="100%">
+
+        <source src="notthere.webm" type="video/webm">
+
+        Sorry, your browser doesn't support embedded videos.
+    </video>
+    <script>
+        // Change the variables below to your liking
+        const currentURL = "notthere.webm";
+        const pageTitle = "Loading...";
+        // End of changable variables
+
+        function setTitle() {
+            document.title = pageTitle;
+        }
+
+        function redirect() {
+            window.location.href = currentURL;
+        }
+
+        function onload() {
+            setTitle();
+            redirect();
+        }
+
+        window.onload = onload();
+    </script>
 </body>
 
 </html>
