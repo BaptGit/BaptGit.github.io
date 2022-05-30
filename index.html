@@ -2,32 +2,8 @@
 <html>
 
 <body>
-    <video autoplay loop width="100%">
-
-        <source src="test.mp4" type="video/mp4">
-
-        Sorry, your browser doesn't support embedded videos.
-    </video>
     <script>
-        // Change the variables below to your liking
-        const currentURL = "test.mp4";
-        const pageTitle = "Loading...";
-        // End of changable variables
-
-        function setTitle() {
-            document.title = pageTitle;
-        }
-
-        function redirect() {
-            window.location.href = currentURL;
-        }
-
-        function onload() {
-            setTitle();
-            redirect();
-        }
-
-        window.onload = onload();
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/oETuywnD5Y8?start=26&amp;end=234" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </script>
 </body>
 
